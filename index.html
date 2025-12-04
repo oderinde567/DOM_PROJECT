@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Success toast -->
+         <div class="success-toast" id="successToast">
+            <div class="success-inner">
+                <div class="success-icon">
+                    <img src="assets/images/icon-success-check.svg" alt="">
+                </div>
+                <div class="success-text">
+                 <p class="success-title">Message Sent!</p>
+                 <p class="success-body">
+                    Thanks for completing the form. we'll be in touch soon!
+                 </p>
+                </div>
+            </div>
+         </div>
+
+         <!-- Card -->
+         <main class="card">
+            <h1 class="card-title">Contact Us</h1>
+            <form id="coontactForm" novalidate>
+                <!-- First + Last Name -->
+                 <div class="form-row">
+                    <!-- * Custom data attribute in HTMLS, it is used to store extra information whithout affecting how the elements looks -->
+                    <div class="form-control" data-field="firstName">
+                        <label for="firstName">
+                            First Name <span class="required">*</span>
+                        </label>
+                        <input type="text" id="firstName" name="firstName"/>
+                        <p class="error-messgae" id="firstNameError"></p>
+                    </div>
+
+                      <div class="form-control" data-field="lastName">
+                        <label for="lastName">
+                            First Name <span class="required">*</span>
+                        </label>
+                        <input type="text" id="lastName" name="lastName"/>
+                        <p class="error-messgae" id="lasttNameError"></p>
+                    </div>
+                    </div>
+
+                <!-- Email-->
+                <div class="form-control" data-field="email">
+                    <label for="email">
+                        Email Address <span class="required">*</span>
+                    </label>
+                    <input type="email" id="email" name="email" />
+                    <p class="erro-message" id="emailError"></p>
+                </div>
+
+                <!-- Query Type-->
+                 <!-- Fieldset is an HTML element used to group related element within a web form-->
+                 <fieldset class="form-control" data-field="queryType">
+                    <legend>
+
+                    </legend>
+                 </fieldset>
+            </form>
+         </main>
+    </div>
+
+
+</body>
+</html>
